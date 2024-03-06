@@ -7,8 +7,8 @@
 <h3>Transition to a virtual environment</h3>
 env\Scripts\activate
 <h3>Run telegram bot</h3>
-(env) C:\you_path\django_bot>python bot1.py
-
+(env) C:\you_path\django_bot>python bot1.py <br>
+Bot name: https://t.me/new_vov_bot
 <h1 style="text-align: center;">Bot image</h1>
 <div style="display:flax;">
   <img
