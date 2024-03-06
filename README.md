@@ -15,15 +15,15 @@ env\Scripts\activate
     src="/media/images/bot1.jpg"
     alt="Alt text"
     title="Optional title"
-    style="display: inline-block; margin: 30 auto;width: 300px;margin-right:30px;">
+    style="display: inline-block; margin: 30 auto;width: 300px;height:400px;margin-right:30px;">
   <img
     src="/media/images/bot2.jpg"
     alt="Alt text"
     title="Optional title"
-    style="display: inline-block; margin: 30 auto; width: 300px;margin-right:30px;">
+    style="display: inline-block; margin: 30 auto; width: 300px;height:400px;margin-right:30px;">
     <img
     src="/media/images/bot3.jpg"
     alt="Alt text"
     title="Optional title"
-    style="display: inline-block; margin: 30 auto;width: 300px; margin-right:30px;">
+    style="display: inline-block; margin: 30 auto;width: 300px;height:400px; margin-right:30px;">
 </div>
