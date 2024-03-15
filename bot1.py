@@ -4,11 +4,22 @@ import asyncio
 import sqlite3
 import os
 
-bot = telegram.Bot(token="your_bot_token")
+from dotenv import load_dotenv
+import os
+
+# .env dosyasını yükle
+load_dotenv()
+
+# .env dosyasından çevresel değişkenleri al
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
+
+
+bot = telegram.Bot(token=BOT_TOKEN)
 conn = sqlite3.connect("db.db")
 cursor = conn.cursor()
 async def send_good_morning():
-    chat_id = "your_chat_id"  # chat ID to bot
+    chat_id = CHAT_ID  # chat ID to bot
 
     query = "SELECT * FROM bot_app_employeemodel"
     cursor.execute(query)
@@ -36,7 +47,7 @@ async def send_good_morning():
         await bot.send_message(chat_id=chat_id, text=message)
 
 async def send_message():
-    chat_id = "your_chat_id"  # chat ID to bot
+    chat_id = CHAT_ID  # chat ID to bot
     now = datetime.datetime.now()
     message = f"List of today`s Birtdays({now.year}-{now.month}-{now.day})"
     await bot.send_message(chat_id=chat_id, text=message)
